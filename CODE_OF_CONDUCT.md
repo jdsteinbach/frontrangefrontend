@@ -25,3 +25,5 @@ Collaboration reduces redundancy and improves the quality of our work. Internall
 ## Be Responsive and Helpful
 
 All of us started as new and inexperienced. Even the most experienced of us may forget things. Nobody is expected to be perfect in this community. Questions are encouraged and those who are asked should endeavor to be responsive, courteous, and helpful. When off topic, please direct to the appropriate forum. Even when the question is common and repeatedly asked, even when the documentation explains it, remember that they have only asked it once and they may have read, but not understood. Ultimately, it is better to give no answer than an unfriendly one.
+
+_[Adapted from Sass Community Guidelines](http://sass-lang.com/community-guidelines)_
