@@ -1,0 +1,11 @@
+nav {
+  li,
+  a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+@import 'primary';
+@import 'secondary';
+@import 'footer';

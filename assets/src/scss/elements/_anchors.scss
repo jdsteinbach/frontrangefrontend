@@ -1,0 +1,46 @@
+a.link {
+  color: c('purple');
+  display: inline-table;
+  font-size: 77.5%;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &:after {
+    content: '';
+    border-bottom: 2px solid c('yellow');
+    display: block;
+    opacity: 0;
+    transition: $base-transition;
+    transform: scaleX(0);
+    width: 100%;
+
+    .l-yellow & {
+      border-bottom-color: c('green')
+    }
+  }
+
+  @include haf {
+    color: c('green');
+
+    &:after {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  .l-purple &,
+  .l-green &,
+  .l-gray & {
+    color: c('yellow');
+
+    @include haf {
+      color: c('offwhite', fade);
+    }
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}

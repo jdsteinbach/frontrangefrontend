@@ -1,0 +1,103 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.l-body {
+  height: 100vh;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: stretch;
+  overflow-x: hidden;
+  background-color: $color-white;
+}
+
+// Grid layout styles
+.l-header,
+.l-footer {
+  flex: 0 0 auto;
+}
+
+.l-main {
+  width: 100%;
+  flex: 1 1 auto;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.l-row {
+  padding: $large-spacing $small-spacing $large-spacing * 2;
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    border-bottom: $large-spacing solid;
+    border-right: 50vw solid transparent;
+    border-left: 50vw solid transparent;
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    left: 0;
+  }
+
+  @include bp(medium) {
+    padding-right: calc(50vw - 25em + $base-spacing);
+    padding-left: calc(50vw - 25em + $base-spacing);
+  }
+}
+
+.l-normal {
+  background-image: linear-gradient(c('offwhite'), c('offwhite', dark));
+  &::before {
+    border-bottom-color: c('offwhite');
+  }
+}
+
+.l-purple {
+  background-color: c('purple');
+  background-image: linear-gradient(c('purple'), c('purple', dark));
+  color: c('offwhite');
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  &::before {
+    border-bottom-color: c('purple');
+  }
+}
+
+.l-green {
+  background-color: c('green');
+  background-image: linear-gradient(c('green'), c('green', dark));
+  color: c('offwhite');
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  &::before {
+    border-bottom-color: c('green');
+  }
+}
+
+.l-yellow {
+  background-color: c('yellow');
+  background-image: linear-gradient(c('yellow'), c('yellow', dark));
+  color: c('gray');
+  text-align: center;
+  &::before {
+    border-bottom-color: c('yellow');
+  }
+}
+
+.l-gray {
+  background-color: c('gray');
+  background-image: linear-gradient(c('gray'), c('gray', dark));
+  color: c('offwhite');
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  &::before {
+    border-bottom-color: c('gray');
+  }
+}

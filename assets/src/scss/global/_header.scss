@@ -1,0 +1,32 @@
+// Header Styles
+.site-header {
+  width: 100%;
+  padding: $small-spacing $base-spacing;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid c('purple', fade);
+  background-color: $color-white;
+  z-index: 1;
+
+  > * {
+    flex: 0 1 auto;
+    vertical-align: middle;
+  }
+
+  a.button {
+    color: $color-white;
+    font-size: 15px;
+    padding: 12px 24px;
+    margin-left: 10px;
+  }
+}
+
+.site-header__logo {
+  margin-right: auto;
+
+  img {
+    max-width: 288px;
+  }
+}

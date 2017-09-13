@@ -1,0 +1,44 @@
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Change `.entry-content` if you need to rescope the "default" list
+// styles to a more accurate context
+.site-content,
+.entry-content {
+  ul:not([class]) {
+    list-style-type: disc;
+    margin-bottom: $base-spacing;
+    padding-left: $base-spacing;
+
+    li {
+      margin-bottom: $small-spacing;
+    }
+  }
+
+  ol:not([class]) {
+    list-style-type: decimal;
+    margin-bottom: $base-spacing;
+    padding-left: $base-spacing;
+
+    li {
+      margin-bottom: $small-spacing;
+    }
+  }
+}
+
+dl {
+  margin-bottom: $small-spacing;
+
+  dt {
+    font-weight: bold;
+    margin-top: $small-spacing;
+  }
+
+  dd {
+    margin: 0;
+  }
+}

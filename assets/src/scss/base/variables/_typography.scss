@@ -1,0 +1,23 @@
+/*
+ * Font Families
+ */
+$base-font-family:      prenton, Palatino, serif;
+$secondary-font-family: prenton-condensed, $base-font-family;
+$body-font-family:      $base-font-family;
+$heading-font-family:   $secondary-font-family;
+
+/*
+ * Font Sizes
+ */
+
+// Line height
+
+$font-sizes: (
+  p: (16px 30px, 22px 30px),
+  nav: (20px 30px, false),
+  hero: (48px 60px, 120px 120px),
+  h1: (36px 45px, 60px 60px),
+  h2: (30px 30px, 40px 45px),
+  h3: (24px 30px, 32px 45px),
+  h4: (20px 30px, 28px 30px)
+);

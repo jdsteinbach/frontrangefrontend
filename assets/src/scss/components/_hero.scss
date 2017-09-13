@@ -1,0 +1,31 @@
+.l-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    @include font(hero);
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    text-transform: uppercase;
+    letter-spacing: (1em/32);
+    text-shadow:
+      1px 1px 0 c('yellow'),
+      2px 2px 0 c('yellow'),
+      3px 3px 0 c('yellow'),
+      4px 4px 0 c('yellow'),
+      5px 5px 0 c('green'),
+      6px 6px 0 c('green'),
+      7px 7px 0 c('green'),
+      8px 8px 0 c('green'),
+      9px 9px 0 c('gray'),
+      10px 10px 0 c('gray'),
+      11px 11px 0 c('gray'),
+      12px 12px 0 c('gray');
+  }
+
+  em {
+    display: block;
+    font-style: normal;
+  }
+}

@@ -1,0 +1,88 @@
+.button,
+[type='reset'],
+[type='submit'],
+button:not(.button-delete) {
+  appearance: none;
+  background-color: $action-color;
+  border-radius: $base-border-radius;
+  border: none;
+  box-shadow: 0;
+  color: c('offwhite');
+  cursor: pointer;
+  display: inline-block;
+  font-family: $base-font-family;
+  @font(nav);
+  -webkit-font-smoothing: antialiased;
+  font-weight: bold;
+  letter-spacing: (1em/12);
+  line-height: 1;
+  padding: $base-spacing $large-spacing;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: $base-transition;
+  will-change: all;
+  user-select: none;
+  vertical-align: middle;
+  box-shadow:
+      1px 1px 0 0 c('yellow'),
+      2px 2px 0 0 c('yellow'),
+      3px 3px 0 0 c('yellow'),
+      4px 4px 0 0 c('yellow'),
+      5px 5px 0 0 c('green'),
+      6px 6px 0 0 c('green'),
+      7px 7px 0 0 c('green'),
+      8px 8px 0 0 c('green'),
+      9px 9px 0 0 c('gray'),
+      10px 10px 0 0 c('gray'),
+      11px 11px 0 0 c('gray'),
+      12px 12px 0 0 c('gray');
+
+  @include bp(medium) {
+    white-space: nowrap;
+  }
+
+  &:hover {
+    background-color: lighten($action-color, 5%);
+    color: c('offwhite');
+    box-shadow:
+        1px 1px 0 0 c('yellow'),
+        2px 2px 0 0 c('yellow'),
+        3px 3px 0 0 c('green'),
+        4px 4px 0 0 c('green'),
+        5px 5px 0 0 c('gray'),
+        6px 6px 0 0 c('gray');
+  }
+
+  @include haf {
+    background-color: c('purple');
+    color: c('offwhite');
+  }
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+
+  &.unstyled {
+    background-color: transparent;
+    color: c('gray');
+
+  }
+
+  &.hollow {
+    background-color: transparent;
+    border: 2px solid currentColor;
+    color: $action-color;
+  }
+
+  &.light {
+    background-color: c('offwhite');
+    color: c('purple');
+
+    @include haf {
+      background-color: c('offwhite');
+      color: c('purple', dark);
+    }
+  }
+}
