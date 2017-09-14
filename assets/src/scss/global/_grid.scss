@@ -34,6 +34,21 @@ html {
 .l-row {
   padding: $large-spacing $small-spacing $large-spacing * 2;
   position: relative;
+  text-align: center;
+
+  p,
+  ul {
+    text-align: left;
+    max-width: 30em;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  > .button {
+    margin-bottom: $base-spacing;
+    align-self: center;
+  }
+
   &::before {
     content: '';
     display: block;
@@ -64,7 +79,9 @@ html {
   background-image: linear-gradient(c('purple'), c('purple', dark));
   color: c('offwhite');
   -webkit-font-smoothing: antialiased;
-  text-align: center;
+  text-shadow:
+    1px 1px 0 c('purple', dark),
+    2px 2px 0 c('purple', dark);
   &::before {
     border-bottom-color: c('purple');
   }
@@ -75,7 +92,9 @@ html {
   background-image: linear-gradient(c('green'), c('green', dark));
   color: c('offwhite');
   -webkit-font-smoothing: antialiased;
-  text-align: center;
+  text-shadow:
+    1px 1px 0 c('green', dark),
+    2px 2px 0 c('green', dark);
   &::before {
     border-bottom-color: c('green');
   }
@@ -85,7 +104,6 @@ html {
   background-color: c('yellow');
   background-image: linear-gradient(c('yellow'), c('yellow', dark));
   color: c('gray');
-  text-align: center;
   &::before {
     border-bottom-color: c('yellow');
   }
@@ -96,7 +114,9 @@ html {
   background-image: linear-gradient(c('gray'), c('gray', dark));
   color: c('offwhite');
   -webkit-font-smoothing: antialiased;
-  text-align: center;
+  text-shadow:
+    1px 1px 0 c('gray', dark),
+    2px 2px 0 c('gray', dark);
   &::before {
     border-bottom-color: c('gray');
   }

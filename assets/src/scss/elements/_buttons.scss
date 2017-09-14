@@ -24,39 +24,31 @@ button:not(.button-delete) {
   will-change: all;
   user-select: none;
   vertical-align: middle;
+  position: relative;
   box-shadow:
-      1px 1px 0 0 c('yellow'),
-      2px 2px 0 0 c('yellow'),
-      3px 3px 0 0 c('yellow'),
-      4px 4px 0 0 c('yellow'),
-      5px 5px 0 0 c('green'),
-      6px 6px 0 0 c('green'),
-      7px 7px 0 0 c('green'),
-      8px 8px 0 0 c('green'),
-      9px 9px 0 0 c('gray'),
-      10px 10px 0 0 c('gray'),
-      11px 11px 0 0 c('gray'),
-      12px 12px 0 0 c('gray');
+      1px 1px 0 0 c('green'),
+      2px 2px 0 0 c('green'),
+      3px 3px 0 0 c('green'),
+      4px 4px 0 0 c('green'),
+      5px 5px 0 0 c('gray'),
+      6px 6px 0 0 c('gray'),
+      7px 7px 0 0 c('gray'),
+      8px 8px 0 0 c('gray');
+  text-shadow: none;
 
   @include bp(medium) {
     white-space: nowrap;
   }
 
-  &:hover {
-    background-color: lighten($action-color, 5%);
-    color: c('offwhite');
-    box-shadow:
-        1px 1px 0 0 c('yellow'),
-        2px 2px 0 0 c('yellow'),
-        3px 3px 0 0 c('green'),
-        4px 4px 0 0 c('green'),
-        5px 5px 0 0 c('gray'),
-        6px 6px 0 0 c('gray');
-  }
-
   @include haf {
+
     background-color: c('purple');
     color: c('offwhite');
+    box-shadow:
+        1px 1px 0 0 c('green'),
+        2px 2px 0 0 c('green'),
+        3px 3px 0 0 c('gray'),
+        4px 4px 0 0 c('gray');
   }
 
   &:disabled {

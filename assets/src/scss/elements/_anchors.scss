@@ -3,8 +3,11 @@ a.link {
   display: inline-table;
   font-size: 77.5%;
   letter-spacing: 1px;
+  padding-right: 1em;
+  padding-left: 1em;
   text-align: center;
   text-transform: uppercase;
+  vertical-align: top;
 
   &:after {
     content: '';

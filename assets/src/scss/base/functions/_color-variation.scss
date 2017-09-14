@@ -7,6 +7,7 @@
  *
  * Function dynamically generates & calls a SassScript color function (found in $variations) to the color called from $colors
 */
+
 @function color-variation( $color, $variation: false ) {
   @if map-has-key( $colors, $color ) {
     $color: map-get( $colors, $color );

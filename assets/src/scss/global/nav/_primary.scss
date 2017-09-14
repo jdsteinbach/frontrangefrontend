@@ -1,14 +1,11 @@
 // Navigation Styles: Primary
-.nav.main-nav {
+.site-header__nav {
   text-align: right;
 
   a {
-    color: c('green');
-    font-size: 15px;
+    @extend .link;
     font-weight: 900;
-    letter-spacing: 1px;
-    padding: 12px 6px;
-    text-transform: uppercase;
+    padding: $small-spacing;
   }
 
   @include bp(small) {
