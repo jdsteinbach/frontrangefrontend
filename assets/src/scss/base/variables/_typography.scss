@@ -1,7 +1,8 @@
 /*
  * Font Families
  */
-$base-font-family:      prenton, Palatino, serif;
+$system-fonts:         -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$base-font-family:      prenton, $system-fonts;
 $secondary-font-family: prenton-condensed, $base-font-family;
 $body-font-family:      $base-font-family;
 $heading-font-family:   $secondary-font-family;
@@ -13,9 +14,10 @@ $heading-font-family:   $secondary-font-family;
 // Line height
 
 $font-sizes: (
-  p: (20px 30px, 24px 30px),
-  nav: (20px 30px, false),
-  hero: (48px 60px, 120px 120px),
+  sm: (12px 15px, 16px 30px),
+  p: (20px 30px, 24px 45px),
+  nav: (16px 30px, false),
+  hero: (40px 60px, 120px 120px),
   h1: (36px 45px, 60px 60px),
   h2: (30px 30px, 40px 45px),
   h3: (24px 30px, 32px 45px),

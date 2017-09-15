@@ -1,12 +1,14 @@
 // Header Styles
 .site-header {
+  height: $large-spacing;
   width: 100%;
-  padding: $small-spacing $base-spacing;
+  padding: 0 $small-spacing;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-  background-color: $color-white;
+  border-bottom: 1px solid c('purple');
+  background-color: rgba(c('offwhite'), .95);
   z-index: 1;
 
   > * {
@@ -14,18 +16,56 @@
     vertical-align: middle;
   }
 
-  a.button {
-    color: $color-white;
-    font-size: 15px;
-    padding: 12px 24px;
-    margin-left: 10px;
+  label {
+    margin-bottom: 0;
+  }
+
+  @include bp(medium) {
+    height: 90px;
+    justify-content: center;
   }
 }
 
 .site-header__logo {
   margin-right: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-self: stretch;
 
-  img {
+  svg {
+    display: inline-block;
     max-width: 288px;
+    height: $large-spacing;
+
+    @include bp(medium) {
+      height: 90px;
+    }
+  }
+
+  @include bp(medium) {
+    margin-right: $large-spacing;
+  }
+}
+
+.site-header__name {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+
+  @include bp(small) {
+    font-size: 24px;
+  }
+
+  @include bp(medium) {
+    font-size: 0;
+  }
+
+  @include bp(large) {
+    font-size: 24px;
+  }
+
+  .t-logo-cap {
+    font-size: 24px;
   }
 }

@@ -1,0 +1,18 @@
+@mixin row($color: 'purple') {
+  background-color: c($color);
+  background-image: linear-gradient(c($color), c($color, dark));
+
+  @if $color == 'yellow' {
+    color: c('gray');
+  } @else {
+    color: c('offwhite');
+    -webkit-font-smoothing: antialiased;
+    text-shadow:
+      1px 1px 0 c($color, dark),
+      2px 2px 0 c($color, dark);
+  }
+
+  &::before {
+    border-bottom-color: c($color);
+  }
+}

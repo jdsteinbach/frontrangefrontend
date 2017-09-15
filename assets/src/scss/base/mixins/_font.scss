@@ -16,7 +16,7 @@
   @include _size-height( $default... );
 
   @if ( $large ) {
-    @include bp( medium ) {
+    @include bp( 50em ) {
       @include _size-height( $large... );
     }
   }

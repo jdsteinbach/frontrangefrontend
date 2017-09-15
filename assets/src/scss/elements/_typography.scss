@@ -11,54 +11,52 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $heading-font-family;
   font-weight: 700;
   margin: 0 0 $base-spacing;
 }
 
-@function power($x, $n) {
-  $return: 1;
-  @if $n > 0 {
-    @for $i from 1 through $n {
-      $return: $return * $x;
-    }
-  } @else if $n < 0 {
-    @for $i from $n to 0 {
-      $return: $return / $x;
-    }
-  }
-  @return $return;
-}
-
-@for $i from 1 to 4 {
-  h#{$i} {
-    @include font('h#{$i}')
-  }
+h1, h2 {
+  font-family: $heading-font-family;
 }
 
 p {
   margin: 0 0 $base-spacing;
 }
 
-a:not(.button) {
-  color: $action-color;
-  text-decoration: none;
-  transition: color .2s;
+.t-hero {
+  @include font(hero);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: (1em/32);
 
-  @include haf {
-    color: $hover-color;
-    outline: none;
+  strong {
+    display: block;
+    font-weight: inherit;
   }
+}
 
-  .l-purple &,
-  .l-green &,
-  .l-gray & {
-    color: c('yellow');
+.t-heading {
+  @include font(h2);
+}
 
-    @include haf {
-      color: c('offwhite', fade);
-    }
+.t-subheading {
+  @include font(p);
+  margin: $base-spacing auto $small-spacing;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: (1em/16);
+  color: c('purple', dark);
+
+  @include bp(medium) {
+    margin-top: $large-spacing;
   }
+}
+
+.t-label {
+  @include font(sm);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: (1em/16);
 }
 
 hr {

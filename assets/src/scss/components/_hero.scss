@@ -1,15 +1,10 @@
 .l-hero {
-  min-height: calc(100vh - 122px);
+  min-height: calc(100vh - 120px);
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   h1 {
-    @include font(hero);
-    font-weight: 700;
-    -webkit-font-smoothing: antialiased;
-    text-transform: uppercase;
-    letter-spacing: (1em/32);
     text-shadow:
       1px 1px 0 c('green'),
       2px 2px 0 c('green'),
@@ -21,8 +16,21 @@
       8px 8px 0 c('gray');
   }
 
-  em {
-    display: block;
-    font-style: normal;
+  h2 {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 15em;
+  }
+
+  .button {
+    margin-top: $base-spacing;
+  }
+
+  @include bp(medium) {
+    min-height: calc(100vh - 180px);
+
+    .button {
+      margin-top: $large-spacing;
+    }
   }
 }

@@ -1,3 +1,24 @@
+a:not(.button) {
+  color: $action-color;
+  text-decoration: none;
+  transition: color .2s;
+
+  @include haf {
+    color: $hover-color;
+    outline: none;
+  }
+
+  .l-purple &,
+  .l-green &,
+  .l-gray & {
+    color: c('yellow');
+
+    @include haf {
+      color: c('offwhite', fade);
+    }
+  }
+}
+
 a.link {
   color: c('purple');
   display: inline-table;

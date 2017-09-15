@@ -1,7 +1,20 @@
 // Footer Styles
 .site-footer {
-  background-color: $color-white;
-  padding: 0 $base-spacing;
-  text-align: center;
+  height: 60px;
   width: 100%;
+  padding: 0 $base-spacing;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(c('offwhite'), .95);
+
+  @include bp(medium) {
+    height: 90px;
+  }
+}
+
+.site-footer__copyright {
+  margin: 0;
+  @include font(sm);
 }

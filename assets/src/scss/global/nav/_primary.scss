@@ -1,14 +1,48 @@
 // Navigation Styles: Primary
 .site-header__nav {
+  @include position(absolute, $large-spacing 0 null 0);
   text-align: right;
+  border-top: 1px solid c('gray', fade);
+  background-color: c('offwhite');
+  transform: scaleY(0);
+  transform-origin: right top;
+  transition: transform .25s ease-in-out;
 
-  a {
-    @extend .link;
-    font-weight: 900;
-    padding: $small-spacing;
+  :checked + & {
+    transform: none;
   }
 
-  @include bp(small) {
-    padding: 12px;
+  a {
+    @include font(nav);
+    padding: $small-spacing;
+    color: c('green');
+
+    @include haf {
+      color: c('green', dark);
+    }
+  }
+
+  @include bp(medium) {
+    position: static;
+    border-top-width: 0;
+    background-color: transparent;
+    transform: none;
+    transition: none;
+  }
+}
+
+.site-header__nav-toggle {
+  padding: $small-spacing;
+  line-height: 10px;
+  border: 2px solid c('green', fade);
+  border-radius: 2px;
+  transition: $base-transition;
+
+  @include haf {
+    border-color: c('green');
+  }
+
+  @include bp(medium) {
+    display: none;
   }
 }

@@ -7,8 +7,7 @@ ol {
 
 // Change `.entry-content` if you need to rescope the "default" list
 // styles to a more accurate context
-.site-content,
-.entry-content {
+.site-content {
   ul:not([class]) {
     list-style-type: disc;
     margin-bottom: $base-spacing;
@@ -16,6 +15,7 @@ ol {
 
     li {
       margin-bottom: $small-spacing;
+      line-height: 30px;
     }
   }
 
