@@ -21,11 +21,12 @@
       @warn "Invalid $variation: `#{$variation}`.";
     } @else {
       $this-variation: map-get( $variations, $variation );
-      $args: join( map-get( $this-variation, function ), $color );
+      $function: map-get( $this-variation, function );
+      $args: $color;
       @if map-has-key( $this-variation, parameters) {
         $args: join( $args, map-get( $this-variation, parameters ) );
       }
-      @return call( $args... );
+      @return call( get-function( $function ), $args... );
     }
   }
   @return $color;
