@@ -1,9 +1,0 @@
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 301
-
-[[redirects]]
-  from = "https://festive-hypatia-19dcfc.netlify.com/*"
-  to = "https://frontrangefrontend.com/:splat"
-  status = 301
