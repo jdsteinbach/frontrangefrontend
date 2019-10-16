@@ -7,10 +7,7 @@
     <meta name="description" content="Front-end developer meetup in Denver, CO. Topics include: HTML, CSS, Sass, JS, accessibility, UI, & UX">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <link rel="stylesheet" href="assets/dev/style.css">
+    <link rel="stylesheet" href="assets/dist/style.min.css">
     <link rel="stylesheet" href="https://use.typekit.net/pcf7scr.css">
   </head>
   <body class="l-body">
@@ -67,7 +64,7 @@
           <p class="address__city-state">Denver, CO 80205</p>
         </a>
         <a href="https://goo.gl/maps/whWkqiiTtvm" class="address link">
-          <img src="https://maps.googleapis.com/maps/api/staticmap?center=39.7676932,-104.9789779&amp;zoom=15&amp;size=400x225&amp;scale=2&amp;maptype=roadmap&amp;markers=color:red%7C39.7676932,-104.9789779" alt="Google Maps" width="400" height="225">
+          <img src="https://maps.googleapis.com/maps/api/staticmap?center=39.7676932,-104.9789779&amp;zoom=15&amp;size=400x225&amp;scale=2&amp;maptype=roadmap&amp;markers=color:red%7C39.7676932,-104.9789779&key=AIzaSyC5oMuCcwqRiTUsbyzIhsynw6-Xpxy-xro" alt="Google Maps" width="400" height="225">
         </a>
         <h3 class="t-subheading">When We Meet</h3>
         <p>We meet the <strong>first Thursday of every month</strong>, at <strong>6:30pm</strong>.</p>
@@ -77,7 +74,7 @@
       <section class="l-row l-row--green" id="rsvp">
         <h2 class="t-heading">RSVP</h2>
         <p>If you’d like more information about our next meetup (or you’re ready to RSVP now), head over to our Meetup.com page!</p>
-        <a href="https://www.meetup.com/preview/Sass-Hack-Denver/events/" class="button">RSVP</a>
+        <a target="_blank" rel="noreferrer noopener nofollow" href="https://www.meetup.com/front-range-front-end/events/" class="button">RSVP</a>
       </section>
 
       <section class="l-row" id="subscribe">
@@ -89,27 +86,26 @@
       <section class="l-row l-row--gray" id="speak">
         <h2 class="t-heading">Apply to Speak</h2>
         <p>Got a topic you’d like to speak about? Maybe an upcoming conference talk you need to practice? Let us know!</p>
-        <a href="https://goo.gl/forms/IQfeXUbrQpCvCyij2" class="button">Apply</a>
+        <a target="_blank" rel="noreferrer noopener nofollow" href="https://goo.gl/forms/IQfeXUbrQpCvCyij2" class="button">Apply</a>
       </section>
 
-      <section class="l-row" id="speak">
+      <section class="l-row" id="suggest">
         <h2 class="t-heading">Suggest a Topic</h2>
         <p>Got a topic you’d like to hear about? Let us know!</p>
-        <a href="https://goo.gl/forms/vSmuEuK260zFDVlr2" class="button">Suggest</a>
+        <a target="_blank" rel="noreferrer noopener nofollow" href="https://goo.gl/forms/vSmuEuK260zFDVlr2" class="button">Suggest</a>
       </section>
     </main>
     <footer class="l-footer site-footer">
-      <p class="site-footer__copyright">All Contents &copy; 2017 Front Range Front-End</p>
+      <p class="site-footer__copyright">All Contents &copy; 2017&ndash;2019 Front Range Front-End</p>
     </footer>
 
-    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
-
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106549501-1"></script>
     <script>
-        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-        ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments)};
+      gtag('js', new Date());
+
+      gtag('config', 'UA-106549501-1');
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   </body>
 </html>
