@@ -2,3 +2,8 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+[[redirects]]
+  from = "https://festive-hypatia-19dcfc.netlify.com/*"
+  to = "https://dev.frontrangefrontend.com/:splat"
+  status = 301
