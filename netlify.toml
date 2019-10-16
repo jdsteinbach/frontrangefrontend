@@ -5,5 +5,5 @@
 
 [[redirects]]
   from = "https://festive-hypatia-19dcfc.netlify.com/*"
-  to = "https://dev.frontrangefrontend.com/:splat"
+  to = "https://frontrangefrontend.com/:splat"
   status = 301
