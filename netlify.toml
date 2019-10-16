@@ -1,9 +1,9 @@
 [[redirects]]
-  from = "https://festive-hypatia-19dcfc.netlify.com/*"
-  to = "https://frontrangefrontend.com/:splat"
+  from = "/*"
+  to = "/"
   status = 301
 
 [[redirects]]
-  from = "/*"
-  to = "/"
+  from = "https://festive-hypatia-19dcfc.netlify.com/*"
+  to = "https://frontrangefrontend.com/:splat"
   status = 301
