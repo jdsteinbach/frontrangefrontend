@@ -8,9 +8,6 @@
     "start": "eleventy --serve",
     "build": "eleventy"
   },
-  "engines": {
-    "node": "12||14||16"
-  },
   "author": "James Steinbach",
   "license": "ISC",
   "devDependencies": {
