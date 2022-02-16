@@ -11,7 +11,7 @@ button:not([class]) {
   cursor: pointer;
   display: inline-block;
   font-family: $base-font-family;
-  @font(nav);
+  font-size: inherit;
   -webkit-font-smoothing: antialiased;
   font-weight: bold;
   letter-spacing: math.div(1em, 12);
@@ -59,7 +59,6 @@ button:not([class]) {
   &.unstyled {
     background-color: transparent;
     color: c('gray');
-
   }
 
   &.hollow {
@@ -76,5 +75,10 @@ button:not([class]) {
       background-color: c('offwhite', light);
       color: c('purple', dark);
     }
+  }
+
+  &.small {
+    @include font(nav);
+    padding: $small-spacing $base-spacing;
   }
 }

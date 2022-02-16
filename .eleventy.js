@@ -1,4 +1,18 @@
+const dateFns = require('date-fns-tz');
+
 module.exports = eleventyConfig => {
+  eleventyConfig.addFilter('raw', o => JSON.stringify(o, null, 2));
+
+  eleventyConfig.addFilter('fdate', (date, tz) => {
+    const d = dateFns.zonedTimeToUtc(date, tz);
+    return dateFns.format(d, 'MMMM d, y');
+  });
+
+  eleventyConfig.addFilter('ftime', (date, tz) => {
+    const d = dateFns.zonedTimeToUtc(date, tz);
+    return dateFns.format(d, 'h:mm aa');
+  });
+
   eleventyConfig.addCollection('rows', collection => {
     return collection
       .getAll()

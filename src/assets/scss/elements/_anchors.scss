@@ -8,9 +8,9 @@ a:not(.button) {
     outline: none;
   }
 
-  .l-purple &,
-  .l-green &,
-  .l-gray & {
+  .l-row--purple &,
+  .l-row--green &,
+  .l-row--gray & {
     color: c('yellow');
 
     @include haf {
@@ -39,7 +39,7 @@ a.link {
     transform: scaleX(0);
     width: 100%;
 
-    .l-yellow & {
+    .l-row--yellow & {
       border-bottom-color: c('green')
     }
   }
@@ -53,9 +53,9 @@ a.link {
     }
   }
 
-  .l-purple &,
-  .l-green &,
-  .l-gray & {
+  .l-row--purple &,
+  .l-row--green &,
+  .l-row--gray & {
     color: c('yellow');
 
     @include haf {

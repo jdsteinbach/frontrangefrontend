@@ -1,0 +1,44 @@
+.events {
+  margin: $base-spacing 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: $base-spacing;
+  justify-content: center;
+}
+
+.event {
+  padding: $base-spacing;
+  background-color: $color-white;
+  color: $base-font-color;
+  text-shadow: none;
+}
+
+.event__title {
+  @include font(h3);
+}
+
+.event__image {
+  margin: (-1 * $base-spacing) (-1 * $base-spacing) $base-spacing;
+  min-width: calc(100% + #{$base-spacing * 2});
+  border: 0;
+  box-shadow: none;
+}
+
+.event__metadata {
+  @include font(sm);
+
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: math.div(1em, 12);
+  opacity: 0.8;
+}
+
+p.event__description {
+  max-width: 100%;
+}
+
+.event__button {
+  margin-bottom: $base-spacing;
+}
