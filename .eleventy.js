@@ -4,13 +4,11 @@ module.exports = eleventyConfig => {
   eleventyConfig.addFilter('raw', o => JSON.stringify(o, null, 2));
 
   eleventyConfig.addFilter('fdate', (date, tz) => {
-    const d = dateFns.zonedTimeToUtc(date, tz);
-    return dateFns.format(d, 'MMMM d, y');
+    return dateFns.formatInTimeZone(date, tz, 'MMMM d, y');
   });
 
   eleventyConfig.addFilter('ftime', (date, tz) => {
-    const d = dateFns.zonedTimeToUtc(date, tz);
-    return dateFns.format(d, 'h:mm aa');
+    return dateFns.formatInTimeZone(date, tz, 'h:mm aa');
   });
 
   eleventyConfig.addCollection('rows', collection => {

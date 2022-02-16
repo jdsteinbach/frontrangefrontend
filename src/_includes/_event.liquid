@@ -2,8 +2,8 @@
   <img src="{{ e.logo.original.url }}" alt="" class="event__image" />
   <h3 class="event__title">{{ e.name.html }}</h3>
   <time class="event__metadata" datetime="{{ e.start.utc }}">
-    <span class="event__date">{{ e.start.local | fdate: e.start.timezone }}</span>
-    <span class="event__time">{{ e.start.local | ftime: e.start.timezone }}</span>
+    <span class="event__date">{{ e.start.utc | fdate: e.start.timezone }}</span>
+    <span class="event__time">{{ e.start.utc | ftime: e.start.timezone }}</span>
   </time>
   <p class="event__description">{{ e.description.html }}</p>
   <a href="{{ e.url }}" class="event__button button small">Register Now</a>
