@@ -4,26 +4,33 @@
   "description": "Static test site for local dev",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp watch",
+    "build": "gulp build"
   },
   "author": "James Steinbach",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^6.7.4",
+    "@11ty/eleventy": "^1.0.0",
+    "autoprefixer": "^6.7.7",
+    "axios": "^0.26.0",
     "browser-sync": "^2.18.8",
+    "cross-env": "^7.0.3",
     "cssnano": "^3.10.0",
     "del": "^2.2.2",
     "glob": "^7.1.1",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-load-plugins": "^1.5.0",
     "gulp-notify": "^3.0.0",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.3.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^2.4.1",
     "gulp-uglify": "^2.0.1",
-    "gulp-util": "^3.0.8"
+    "gulp-util": "^3.0.8",
+    "postcss": "^8.4.6",
+    "sass": "^1.49.7"
   }
 }

@@ -1,0 +1,42 @@
+/*
+ * Spacing
+ */
+$base-spacing:  30px;
+$small-spacing: math.div($base-spacing, 2);
+$large-spacing: $base-spacing * 2;
+
+/*
+ * Breakpoints
+ */
+$breakpoints: (
+  small: 30em,
+  medium: 55em,
+  large: 70em,
+  xlarge: 90em,
+  max: 110em
+);
+
+$tweakpoints: (
+  nav: map-get( $breakpoints, medium),
+  footer: map-get( $breakpoints, medium),
+);
+
+$bp-nav:    map-get( $breakpoints, medium );
+$bp-footer: map-get( $breakpoints, medium );
+
+$max-width: 1200px;
+
+/*
+ * Gutter / Grid
+ */
+$susy: (
+  columns: 12,
+  container: $max-width,
+  gutters: .45,
+  // debug: (
+  //   image: show,
+  //   color: rgba($color-blue-light, .25),
+  //   output: background,
+  //   toggle: top right,
+  // )
+)

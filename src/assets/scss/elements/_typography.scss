@@ -1,0 +1,92 @@
+body {
+  font-feature-settings: "kern", "liga", "pnum";
+  color: $base-font-color;
+  font-family: $base-font-family;
+  @include font(p);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin: 0 0 $base-spacing;
+}
+
+h1, h2 {
+  font-family: $heading-font-family;
+}
+
+p {
+  margin: 0 0 $base-spacing;
+}
+
+.t-hero {
+  @include font(hero);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: math(1em, 32);
+
+  strong {
+    display: block;
+    font-weight: inherit;
+  }
+}
+
+.t-heading {
+  @include font(h2);
+}
+
+.t-subheading {
+  @include font(p);
+  margin: $base-spacing auto $small-spacing;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: math(1em, 16);
+  color: c('purple', dark);
+
+  @include bp(medium) {
+    margin-top: $large-spacing;
+  }
+}
+
+.t-label {
+  @include font(sm);
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: math(1em, 16);
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: $base-spacing 0;
+}
+
+code {
+  display: inline-block;
+  background-color: #FFE0B2;
+  border: 1px solid currentColor;
+  color: #EF6C00;
+  margin: .5em auto;
+  padding: 1ch;
+  border-radius: 3px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+i, em {
+  font-style: italic;
+}
+
+.center {
+  text-align: center;
+}
