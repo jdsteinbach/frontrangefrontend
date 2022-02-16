@@ -1,0 +1,9 @@
+{%- if r.data.tag -%}
+{%- assign tag = r.data.tag -%}
+{%- else -%}
+{%- assign tag = "section" -%}
+{%- endif -%}
+
+<{{tag}} class="l-row l-row--{{r.data.color}} l-{{r.data.layoutClass}}" id="{{r.fileSlug}}">
+  {{- r.templateContent -}}
+</{{tag}}>

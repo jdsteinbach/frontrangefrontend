@@ -1,9 +1,0 @@
-@mixin span-inline($span: all, $vertical: middle) {
-  $align-keyword: index((top, bottom, middle, baseline, sub, super, text-top, text-bottom, initial, unset, inherit), $vertical);
-  $align-number:  type-of( $vertical ) == number and not unitless( $vertical );
-
-  $vertical: if( $align-keyword or $align-number, $vertical, middle );
-  display: inline-block;
-  vertical-align: $vertical;
-  width: span($span);
-}
