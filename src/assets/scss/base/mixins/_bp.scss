@@ -12,11 +12,13 @@
   }
 
   @if $direction == max {
-    $query: max-width ($query - 1);
+    $query: "max-width: #{$query - 1}";
+  } @else {
+    $query: "min-width: #{$query}";
   }
 
   @if $query {
-    @include breakpoint( $query ) {
+    @media screen and ($query) {
       @content;
     }
   }

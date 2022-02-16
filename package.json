@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gulp watch",
-    "build": "gulp build"
+    "start": "eleventy --serve",
+    "build": "eleventy"
   },
   "author": "James Steinbach",
   "license": "ISC",
