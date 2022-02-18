@@ -6,7 +6,7 @@ const fileName = 'style.scss'
 
 module.exports = class {
   async data () {
-    const rawFilepath = path.join(__dirname, `assets/scss/${fileName}`)
+    const rawFilepath = path.join(__dirname, `scss/${fileName}`)
 
     return {
       permalink: `css/${path.basename(fileName, '.scss')}.min.css`,
