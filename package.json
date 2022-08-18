@@ -11,7 +11,7 @@
   "author": "James Steinbach",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^1.0.2",
     "autoprefixer": "^10.4.2",
     "axios": "^0.26.0",
     "cssnano": "^5.0.17",
